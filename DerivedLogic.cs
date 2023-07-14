@@ -15,7 +15,7 @@ namespace PracticeConsoleApp
         }
         public override string GetFormattedString()
         {
-            return $"{firstName} - {lastName}";
+            return $"{firstName} ---- {lastName}";
         }
     }
 }

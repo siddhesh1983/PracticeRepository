@@ -3,11 +3,15 @@ using PracticeConsoleApp;
 
 Console.WriteLine("Hello, World!");
 
-BaseLogic baseLogic = new Logic("First name" , "Last Name");
+BaseLogic baseLogic = new Logic("Siddhesh" , "Sawant");
 
-BaseLogic derivedLogic = new DerivedLogic("Second name", "Second last Name");
+BaseLogic derivedLogic = new DerivedLogic("Shreyasi", "Sawant");
 
-baseLogic.GetFormattedString();
-derivedLogic.GetFormattedString();
+var baseFormattedString =baseLogic.GetFormattedString();
+var derivedFormattedString = derivedLogic.GetFormattedString();
+
+Console.WriteLine($"this is base formatted string {baseFormattedString} ");
+
+Console.WriteLine($"this is base formatted string {derivedFormattedString} ");
 
 Console.ReadLine();
